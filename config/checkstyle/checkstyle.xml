@@ -17,5 +17,5 @@
         </module>
         <module name="Indentation"/>
     </module>
-    <property name="severity" value="warning"/>
+    <property name="severity" value="error"/>
 </module>
