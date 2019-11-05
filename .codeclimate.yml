@@ -1,5 +1,3 @@
 plugins:
   checkstyle:
     enbled: true
-    config:
-      file: "config/checkstyle/checkstyle.xml"
