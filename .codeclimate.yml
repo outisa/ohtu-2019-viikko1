@@ -1,6 +1,6 @@
 plugins:
-    checkstyle:
-      enabled: true
-        config: 
-          checkstyle:
-            file: "checkstyle.xml"
+  checkstyle:
+    enabled: true
+      config: 
+        checkstyle:
+          file: "checkstyle.xml"
