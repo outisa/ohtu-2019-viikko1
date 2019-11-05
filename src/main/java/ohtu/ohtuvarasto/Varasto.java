@@ -32,20 +32,6 @@ public class Varasto {
         } 
     }
 
-    public double annaSaldo(double saldo, double tilavuus) {
-        if (saldo > tilavuus) {
-            return tilavuus;
-        }
-        return saldo;
-    }
-    
-    public double annaTilavuus(double til) {
-        if (til > 0.0) {
-            return til;
-        } else {
-            return 0.0;
-        }        
-    }
     // --- ottavat aksessorit eli getterit: ---
     public double getSaldo() {
         return saldo;
