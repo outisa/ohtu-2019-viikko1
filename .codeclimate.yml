@@ -1,4 +1,4 @@
 plugins:
     checkstyle:
       enabled: true
-        config: "config/checkstyle/checkstyle.xml"
+        config: "checkstyle/checkstyle.xml"
