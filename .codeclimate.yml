@@ -2,5 +2,5 @@ plugins:
   checkstyle:
     enabled: true
     config: 
-    checkstyle:
-      file: "checkstyle.xml"
+      checkstyle:
+        file: "checkstyle.xml"
