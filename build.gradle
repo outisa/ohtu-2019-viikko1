@@ -51,10 +51,3 @@ jacocoTestReport {
         })
     }   
 }
-
-checkstyle {
-    reports {
-        xml.enabled true
-        html.enabled true
-    }
-}
