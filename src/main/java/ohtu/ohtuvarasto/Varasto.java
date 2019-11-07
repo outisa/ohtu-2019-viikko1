@@ -10,8 +10,7 @@ public class Varasto {
     public Varasto(double tilavuus) {  // tilavuus on annettava
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
-        } else
-        { // virheellinen, nollataan 
+        } else { // virheellinen, nollataan 
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
         this.saldo = 0;
@@ -20,12 +19,7 @@ public class Varasto {
     public Varasto(double tilavuus, double alkuSaldo) { 
         if (tilavuus > 0) {
             this.tilavuus = tilavuus;
-            this.saldo = tilavuus;
-            if (alkuSaldo < 0) {
-                this.saldo = 0.0;
-            } else if (alkuSaldo < this.tilavuus) {
-                this.saldo = alkuSaldo;
-            }    
+            this.saldo = annaSaldo(alkuSaldo);   
         } else {
             this.tilavuus = 0.0;
             this.saldo = 0.0;
@@ -74,5 +68,14 @@ public class Varasto {
     // --- Merkkijonoesitys Varasto-oliolle: ----
     public String toString() {
         return ("saldo = " + saldo + ", vielä tilaa " + paljonkoMahtuu());
+    }
+
+    private double annaSaldo(double alkuSaldo) {
+        if (alkuSaldo < 0) {
+            return 0.0;
+        } else if (alkuSaldo < this.tilavuus) {
+            return alkuSaldo;
+        } 
+        return this.tilavuus;
     }
 }
