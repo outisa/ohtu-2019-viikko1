@@ -7,13 +7,13 @@ public class Varasto {
     private double saldo;     // paljonko varastossa on nyt, >= 0
 
     // --- konstruktorit: ---
-    public Varasto(double tilavuus) {  // tilavuus on annettava
+    public Varasto(double tilavuus) {  
         if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
-        } else { // virheellinen, nollataan 
-            this.tilavuus = 0.0;  // => käyttökelvoton varasto
+        } else { 
+            this.tilavuus = 0.0;  
         }
-            this.saldo = 0;
+        this.saldo = 0;
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { 
