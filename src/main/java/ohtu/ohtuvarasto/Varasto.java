@@ -17,7 +17,8 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { 
-        if (tilavuus > 0) {
+        if (tilavuus > 0)
+        {
             this.tilavuus = tilavuus;
             this.saldo = annaSaldo(alkuSaldo);   
         } else {
