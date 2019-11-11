@@ -31,7 +31,7 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName.from = 'main.Main'
+mainClassName = 'main.Main'
 
 jar {
     manifest {
@@ -45,7 +45,7 @@ jacocoTestReport {
         html.enabled true
     }
     afterEvaluate {
-        classDirectories = files(classDirectories.files.collect {
+        classDirectories.from = files(classDirectories.files.collect {
 	    fileTree(dir: it,
             exclude: ['main/**'])
         })
