@@ -1,4 +1,3 @@
-version: "2"
 plugins:
   checkstyle:
     enabled: true
